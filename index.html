@@ -1,101 +1,1048 @@
-aPeer
-Join the beta
-Now in beta on iOS
-Game on.
-Post a game. Invite your peers, open it to the public, or both. aPeer makes games happen.
-Join the beta
-Free on iOS via TestFlight
-HOW IT WORKS
-Two ways to play
-Whether you want to organize or just show up, aPeer handles both.
-YOU ARE HOSTING
-You organize it
-Post a game, invite your network, and let aPeer handle the rest.
-1
-Post a game
-Pick your sport, set the time, place, and player count.
-2
-Players join
-People nearby see it. Invite trusted players from your network directly.
-3
-Game on
-Enough players commit. Game confirmed. Everyone gets notified.
-4
-aPeer handles it
-Confirmations, notifications, and status updates. You just show up.
-FIND A GAME
-Someone else organized it
-Browse nearby games and join one that works for you.
-1
-Browse games
-See what is posted near you, filtered by sport.
-2
-Join
-Found one that works. Tap to join or request a spot.
-3
-Show up and play
-Game confirmed. You know where, when, and who is in.
-4
-Review and connect
-After the game, review players. Good ones go in your network.
-WHY APEER
-A tool, not a social network
-No feed. No content. Just a clean way to organize games, track who is in, and play with people you trust.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aPeer - Post a game. Build your network. Play.</title>
+  <meta name="description" content="Post a game, invite your peers, and let aPeer handle the rest. A clean way to organize pickup games, track who is in, and play with people you trust.">
+  <meta name="theme-color" content="#1C1917">
 
-Game organization, handled
-Confirmations, status updates, and notifications. Set up the game and aPeer manages who is in.
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="aPeer - Game on.">
+  <meta property="og:description" content="Post a game, invite your peers, and let aPeer handle the rest. A clean way to organize pickup games, track who is in, and play with people you trust.">
+  <meta property="og:url" content="https://apeer.app">
+  <meta property="og:site_name" content="aPeer">
+  <meta property="og:image" content="https://apeer.app/og-image.png">
 
-Real commitment
-Players confirm or they are not counted. You always know who is showing up before you leave your house.
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="aPeer - Game on.">
+  <meta name="twitter:description" content="Post a game, invite your peers, and let aPeer handle the rest. Free on iOS via TestFlight.">
+  <meta name="twitter:image" content="https://apeer.app/og-image.png">
 
-Invite your peers
-Invite players from your network directly to games you are hosting. Fill your roster with people you know.
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-Any sport, any level
-Padel, pickleball, basketball, tennis, rugby, soccer, and more. Competitive or casual.
+  <style>
+    /* ===================================
+       Reset & Base
+       =================================== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-No noise
-No feed. No chat. No content. Post a game or find one, track confirmations, show up, play. That is the entire product.
-YOUR NETWORK
-It gets better every time you play
-Every game adds to your network. Over time, you are surrounded by players who actually show up.
+    :root {
+      /* aPeer Dark Palette — from DarkColors in colors.ts */
+      --bg: #1C1917;
+      --bg-elevated: #292524;
+      --bg-elevated-hover: #33302E;
+      --primary: #14B8A6;
+      --primary-light: #2DD4BF;
+      --primary-soft: #0D3D38;
+      --primary-muted: #115E59;
+      --accent: #FB923C;
+      --text: #F5F5F4;
+      --text-secondary: #A8A29E;
+      --text-on-primary: #042F2E;
+      --border: #44403C;
+      --border-light: #292524;
 
-Post a game
-Set the sport, time, and place.
+      /* Typography */
+      --font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
-Players confirm
-Game fills. Everyone is notified.
+      /* Spacing tokens (4, 8, 12, 16, 20, 24, 32, 40) */
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 12px;
+      --space-lg: 16px;
+      --space-xl: 20px;
+      --space-2xl: 24px;
+      --space-3xl: 32px;
+      --space-4xl: 40px;
 
-Review players
-After the game, note who showed up.
+      /* Radius tokens (8, 12, 16, 20) */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+    }
 
-Invite next time
-Trusted players go in your network. Invite them to future games.
-Trust builds over time
-See who has played, who showed up, and who follows through. Your network is based on real games, not friend requests.
-Not randos from the internet
-Invite players from your network directly to your games. Fill spots with people you have actually played with before.
-Your network grows every time you play. The more you use aPeer, the easier it gets to fill your games with the right people.
-SPORTS ON APEER
-Pickleball
-Padel
-Tennis
-Basketball
-Soccer
-Volleyball
-Rugby
-Golf
-Running
-Cycling
-Softball
-Flag Football
-Ultimate Frisbee
-and more
-Stop coordinating. Start playing.
-Post a game, build your network, and let aPeer handle the rest. Free on iOS via TestFlight.
-Join the beta
-Requires iOS 16 or later
-aPeer
-Privacy
-Contact
-© 2026 aPeer
+    html {
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.5;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 var(--space-2xl);
+    }
+
+    /* ===================================
+       Typography
+       =================================== */
+
+    h1, h2, h3 {
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .section-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto var(--space-4xl);
+      line-height: 1.6;
+    }
+
+    /* ===================================
+       Navigation
+       =================================== */
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: var(--space-lg) 0;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(28, 25, 23, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-wordmark {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-cta {
+      display: inline-block;
+      text-decoration: none;
+      font-family: var(--font-stack);
+      font-weight: 600;
+      font-size: 0.875rem;
+      background: var(--primary);
+      color: var(--text-on-primary);
+      padding: var(--space-sm) var(--space-xl);
+      border-radius: var(--radius-md);
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-light);
+    }
+
+    .nav-cta:active {
+      transform: scale(0.97);
+    }
+
+    /* ===================================
+       Buttons
+       =================================== */
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-family: var(--font-stack);
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: var(--radius-lg);
+      height: 56px;
+      line-height: 56px;
+      padding: 0 var(--space-4xl);
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--text-on-primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    /* ===================================
+       Hero
+       =================================== */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: 9999px;
+      margin-bottom: var(--space-3xl);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-headline {
+      font-size: 4rem;
+      margin-bottom: var(--space-xl);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .hero-headline-accent {
+      color: var(--primary);
+    }
+
+    .hero-sub {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto var(--space-4xl);
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: var(--space-lg);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-note {
+      margin-top: var(--space-xl);
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===================================
+       How It Works — Two Paths
+       =================================== */
+
+    .how-it-works {
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .paths {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4xl);
+      margin-top: var(--space-4xl);
+    }
+
+    .path {
+      background: var(--bg-elevated);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      padding: var(--space-4xl) var(--space-3xl);
+    }
+
+    .path-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      margin-bottom: var(--space-sm);
+    }
+
+    .path-title {
+      font-size: 1.375rem;
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+    }
+
+    .path-desc {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: var(--space-3xl);
+    }
+
+    .path-steps {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xl);
+    }
+
+    .path-step {
+      display: flex;
+      gap: var(--space-lg);
+      align-items: flex-start;
+    }
+
+    .path-step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .path-step-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+
+    .path-step-content p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===================================
+       Why aPeer
+       =================================== */
+
+    .why-apeer {
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-xl);
+    }
+
+    .feature {
+      background: var(--bg-elevated);
+      padding: var(--space-3xl);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s ease;
+    }
+
+    .feature:hover {
+      border-color: var(--primary-muted);
+    }
+
+    .feature h3 {
+      font-size: 1.125rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .feature p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    .feature-wide {
+      grid-column: 1 / -1;
+    }
+
+    /* ===================================
+       Your Network — Flywheel
+       =================================== */
+
+    .network {
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .flywheel {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-xl);
+      margin-bottom: var(--space-4xl);
+    }
+
+    .flywheel-step {
+      text-align: center;
+      padding: var(--space-2xl) var(--space-lg);
+      position: relative;
+    }
+
+    .flywheel-step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 9999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: var(--space-lg);
+    }
+
+    .flywheel-step h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+    }
+
+    .flywheel-step p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Arrow between flywheel steps */
+    .flywheel-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 44px;
+      right: -12px;
+      width: 24px;
+      height: 2px;
+      background: var(--border);
+    }
+
+    .network-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+    }
+
+    .network-card {
+      background: var(--bg-elevated);
+      padding: var(--space-3xl);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s ease;
+    }
+
+    .network-card:hover {
+      border-color: var(--primary-muted);
+    }
+
+    .network-card h3 {
+      font-size: 1.125rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .network-card p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    .network-card-accent {
+      background: var(--primary-soft);
+      border-color: var(--primary-muted);
+      grid-column: 1 / -1;
+    }
+
+    .network-card-accent p {
+      color: var(--primary-light);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ===================================
+       Sports Row
+       =================================== */
+
+    .sports {
+      padding: 64px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .sports-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .sports-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-md);
+    }
+
+    .sport-tag {
+      display: inline-block;
+      padding: var(--space-sm) var(--space-xl);
+      border: 1.5px solid var(--border);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .sport-tag:hover {
+      border-color: var(--primary-muted);
+      color: var(--primary);
+    }
+
+    .sport-tag-more {
+      border-style: dashed;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* ===================================
+       CTA
+       =================================== */
+
+    .cta {
+      padding: 96px 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-headline {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-lg);
+      letter-spacing: -0.02em;
+    }
+
+    .cta-sub {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto var(--space-3xl);
+      line-height: 1.6;
+    }
+
+    .cta-platform {
+      margin-top: var(--space-xl);
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===================================
+       Footer
+       =================================== */
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: var(--space-3xl) 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-lg);
+    }
+
+    .footer-wordmark {
+      color: var(--text);
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: var(--space-2xl);
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+    }
+
+    /* ===================================
+       Responsive — Tablet (768px)
+       =================================== */
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: auto;
+        padding: 140px 0 80px;
+      }
+
+      .hero-headline {
+        font-size: 2.75rem;
+      }
+
+      .hero-sub {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-md);
+      }
+
+      .section-subtitle {
+        margin-bottom: var(--space-3xl);
+      }
+
+      .paths {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+
+      .flywheel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+      }
+
+      .flywheel-step:not(:last-child)::after {
+        display: none;
+      }
+
+      .network-cards {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+
+      .network-card-accent {
+        grid-column: auto;
+      }
+
+      .how-it-works,
+      .why-apeer,
+      .network {
+        padding: 72px 0;
+      }
+
+      .sports {
+        padding: 48px 0;
+      }
+
+      .cta {
+        padding: 72px 0;
+      }
+
+      .cta-headline {
+        font-size: 1.75rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+      }
+    }
+
+    /* ===================================
+       Responsive — Small mobile (480px)
+       =================================== */
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 var(--space-lg);
+      }
+
+      .hero-headline {
+        font-size: 2.25rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .flywheel {
+        grid-template-columns: 1fr;
+      }
+
+      .path {
+        padding: var(--space-3xl) var(--space-2xl);
+      }
+
+      .sports-list {
+        gap: var(--space-sm);
+      }
+
+      .sport-tag {
+        padding: 6px var(--space-lg);
+        font-size: 0.8125rem;
+      }
+
+      .feature {
+        padding: var(--space-2xl);
+      }
+
+      .network-card {
+        padding: var(--space-2xl);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-wordmark">aPeer</a>
+      <a href="https://testflight.apple.com/join/PLACEHOLDER" class="nav-cta">Join the beta</a>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="hero-badge">Now in beta on iOS</span>
+      <h1 class="hero-headline">Game <span class="hero-headline-accent">on.</span></h1>
+      <p class="hero-sub">Post a game. Invite your peers, open it to the public, or both. aPeer makes games happen.</p>
+      <div class="hero-actions">
+        <a href="https://testflight.apple.com/join/PLACEHOLDER" class="btn btn-primary">Join the beta</a>
+      </div>
+      <p class="hero-note">Free on iOS via TestFlight</p>
+    </div>
+  </section>
+
+  <!-- ===== How It Works ===== -->
+  <section class="how-it-works">
+    <div class="container">
+      <p class="section-label">How it works</p>
+      <h2 class="section-title">Two ways to play</h2>
+      <p class="section-subtitle">Whether you want to organize or just show up, aPeer handles both.</p>
+
+      <div class="paths">
+        <!-- Hosting Path -->
+        <div class="path">
+          <p class="path-label">You are hosting</p>
+          <h3 class="path-title">You organize it</h3>
+          <p class="path-desc">Post a game, invite your network, and let aPeer handle the rest.</p>
+          <ol class="path-steps">
+            <li class="path-step">
+              <span class="path-step-number">1</span>
+              <div class="path-step-content">
+                <h3>Post a game</h3>
+                <p>Pick your sport, set the time, place, and player count.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">2</span>
+              <div class="path-step-content">
+                <h3>Players join</h3>
+                <p>People nearby see it. Invite trusted players from your network directly.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">3</span>
+              <div class="path-step-content">
+                <h3>Game on</h3>
+                <p>Enough players commit. Game confirmed. Everyone gets notified.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">4</span>
+              <div class="path-step-content">
+                <h3>aPeer handles it</h3>
+                <p>Confirmations, notifications, and status updates. You just show up.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Finding Path -->
+        <div class="path">
+          <p class="path-label">Find a game</p>
+          <h3 class="path-title">Someone else organized it</h3>
+          <p class="path-desc">Browse nearby games and join one that works for you.</p>
+          <ol class="path-steps">
+            <li class="path-step">
+              <span class="path-step-number">1</span>
+              <div class="path-step-content">
+                <h3>Browse games</h3>
+                <p>See what is posted near you, filtered by sport.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">2</span>
+              <div class="path-step-content">
+                <h3>Join</h3>
+                <p>Found one that works. Tap to join or request a spot.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">3</span>
+              <div class="path-step-content">
+                <h3>Show up and play</h3>
+                <p>Game confirmed. You know where, when, and who is in.</p>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="path-step-number">4</span>
+              <div class="path-step-content">
+                <h3>Review and connect</h3>
+                <p>After the game, review players. Good ones go in your network.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why aPeer ===== -->
+  <section class="why-apeer">
+    <div class="container">
+      <p class="section-label">Why aPeer</p>
+      <h2 class="section-title">A tool, not a social network</h2>
+      <p class="section-subtitle">No feed. No content. Just a clean way to organize games, track who is in, and play with people you trust.</p>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Game organization, handled</h3>
+          <p>Confirmations, status updates, and notifications. Set up the game and aPeer manages who is in.</p>
+        </div>
+        <div class="feature">
+          <h3>Real commitment</h3>
+          <p>Players confirm or they are not counted. You always know who is showing up before you leave your house.</p>
+        </div>
+        <div class="feature">
+          <h3>Invite your peers</h3>
+          <p>Invite players from your network directly to games you are hosting. Fill your roster with people you know.</p>
+        </div>
+        <div class="feature">
+          <h3>Any sport, any level</h3>
+          <p>Padel, pickleball, basketball, tennis, rugby, soccer, and more. Competitive or casual.</p>
+        </div>
+        <div class="feature feature-wide">
+          <h3>No noise</h3>
+          <p>No feed. No chat. No content. Post a game or find one, track confirmations, show up, play. That is the entire product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Your Network ===== -->
+  <section class="network">
+    <div class="container">
+      <p class="section-label">Your network</p>
+      <h2 class="section-title">It gets better every time you play</h2>
+      <p class="section-subtitle">Every game adds to your network. Over time, you are surrounded by players who actually show up.</p>
+
+      <div class="flywheel">
+        <div class="flywheel-step">
+          <span class="flywheel-step-number">1</span>
+          <h3>Post a game</h3>
+          <p>Set the sport, time, and place.</p>
+        </div>
+        <div class="flywheel-step">
+          <span class="flywheel-step-number">2</span>
+          <h3>Players confirm</h3>
+          <p>Game fills. Everyone is notified.</p>
+        </div>
+        <div class="flywheel-step">
+          <span class="flywheel-step-number">3</span>
+          <h3>Review players</h3>
+          <p>After the game, note who showed up.</p>
+        </div>
+        <div class="flywheel-step">
+          <span class="flywheel-step-number">4</span>
+          <h3>Invite next time</h3>
+          <p>Trusted players go in your network. Invite them to future games.</p>
+        </div>
+      </div>
+
+      <div class="network-cards">
+        <div class="network-card">
+          <h3>Trust builds over time</h3>
+          <p>See who has played, who showed up, and who follows through. Your network is based on real games, not friend requests.</p>
+        </div>
+        <div class="network-card">
+          <h3>Not randos from the internet</h3>
+          <p>Invite players from your network directly to your games. Fill spots with people you have actually played with before.</p>
+        </div>
+        <div class="network-card network-card-accent">
+          <p>Your network grows every time you play. The more you use aPeer, the easier it gets to fill your games with the right people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sports Row ===== -->
+  <section class="sports">
+    <div class="container">
+      <p class="sports-label">Sports on aPeer</p>
+      <div class="sports-list">
+        <span class="sport-tag">Pickleball</span>
+        <span class="sport-tag">Padel</span>
+        <span class="sport-tag">Tennis</span>
+        <span class="sport-tag">Basketball</span>
+        <span class="sport-tag">Soccer</span>
+        <span class="sport-tag">Volleyball</span>
+        <span class="sport-tag">Rugby</span>
+        <span class="sport-tag">Golf</span>
+        <span class="sport-tag">Running</span>
+        <span class="sport-tag">Cycling</span>
+        <span class="sport-tag">Softball</span>
+        <span class="sport-tag">Flag Football</span>
+        <span class="sport-tag">Ultimate Frisbee</span>
+        <span class="sport-tag sport-tag-more">and more</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container cta-content">
+      <h2 class="cta-headline">Stop coordinating. Start playing.</h2>
+      <p class="cta-sub">Post a game, build your network, and let aPeer handle the rest. Free on iOS via TestFlight.</p>
+      <a href="https://testflight.apple.com/join/PLACEHOLDER" class="btn btn-primary">Join the beta</a>
+      <p class="cta-platform">Requires iOS 16 or later</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-wordmark">aPeer</span>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:hello@apeer.app">Contact</a>
+      </div>
+      <span class="footer-copy">&copy; 2026 aPeer</span>
+    </div>
+  </footer>
+
+  <!-- Nav blur on scroll -->
+  <script>
+    (function() {
+      var nav = document.getElementById('nav');
+      var scrolled = false;
+      window.addEventListener('scroll', function() {
+        var shouldBeScrolled = window.scrollY > 32;
+        if (shouldBeScrolled !== scrolled) {
+          scrolled = shouldBeScrolled;
+          if (scrolled) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        }
+      }, { passive: true });
+    })();
+  </script>
+
+</body>
+</html>
