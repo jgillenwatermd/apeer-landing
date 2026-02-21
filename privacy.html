@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy -- aPeer</title>
+  <meta name="description" content="aPeer privacy policy. How we collect, use, and protect your data.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy -- aPeer">
+  <meta property="og:description" content="aPeer privacy policy. How we collect, use, and protect your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apeer.app/privacy">
+
+  <link rel="canonical" href="https://apeer.app/privacy">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <style>
+    /* ===================================
+       aPeer Privacy Page
+       All CSS inlined for local file + Squarespace compatibility
+       =================================== */
+
+    /* Reset */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #1C1917;
+      --bg-elevated: #292524;
+      --primary: #14B8A6;
+      --primary-light: #2DD4BF;
+      --text: #F5F5F4;
+      --text-secondary: #A8A29E;
+      --border: #44403C;
+      --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+      --s-xs: 4px;
+      --s-sm: 8px;
+      --s-md: 12px;
+      --s-lg: 16px;
+      --s-xl: 20px;
+      --s-2xl: 24px;
+      --s-3xl: 32px;
+      --s-4xl: 40px;
+
+      --r-sm: 8px;
+      --r-md: 12px;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.5;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .privacy-header {
+      background: var(--bg-elevated);
+      padding: var(--s-xl) 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 var(--s-2xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .privacy-header-wordmark {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+
+    .privacy-header-wordmark:hover {
+      color: var(--primary-light);
+    }
+
+    .privacy-back {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .privacy-back:hover {
+      color: var(--primary);
+    }
+
+    /* Content */
+    .privacy-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px var(--s-2xl) 80px;
+    }
+
+    .privacy-content h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      color: var(--text);
+      margin-bottom: var(--s-sm);
+    }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      margin-bottom: var(--s-4xl);
+    }
+
+    .privacy-content > p {
+      color: var(--text-secondary);
+      margin-bottom: var(--s-lg);
+      line-height: 1.7;
+      font-size: 0.9375rem;
+    }
+
+    .privacy-content h2 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      color: var(--text);
+      margin-top: var(--s-4xl);
+      margin-bottom: var(--s-md);
+    }
+
+    .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: var(--s-lg);
+      padding-left: var(--s-2xl);
+      line-height: 1.7;
+      font-size: 0.9375rem;
+    }
+
+    .privacy-content li {
+      margin-bottom: 6px;
+    }
+
+    .privacy-content li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .privacy-content a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .privacy-content a:hover {
+      color: var(--primary-light);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: var(--s-2xl) 0;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 var(--s-2xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--s-lg);
+    }
+
+    .footer-wordmark {
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: var(--s-2xl);
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.8125rem;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .privacy-header-inner {
+        flex-direction: column;
+        gap: var(--s-sm);
+        text-align: center;
+      }
+
+      .privacy-content {
+        padding: 40px var(--s-lg) 64px;
+      }
+
+      .privacy-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--s-md);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="privacy-header">
+    <div class="privacy-header-inner">
+      <a href="index.html" class="privacy-header-wordmark">aPeer</a>
+      <a href="index.html" class="privacy-back">Back to home</a>
+    </div>
+  </header>
+
+  <main class="privacy-content">
+    <h1>Privacy policy</h1>
+    <p class="last-updated">Last updated: February 21, 2026</p>
+
+    <p>aPeer is built to help you find and organize pickup sports games with real people. We take your privacy seriously. This policy explains what we collect, how we use it, and what we do not do.</p>
+
+    <h2>What we collect</h2>
+    <p>When you use aPeer, we may collect the following information:</p>
+    <ul>
+      <li><strong>Account information</strong> -- Your name and email address, provided through Apple Sign-In.</li>
+      <li><strong>Sports preferences</strong> -- The sports you play, which you provide when setting up your profile.</li>
+      <li><strong>Location</strong> -- Your general location, only when you opt in, to help you find games nearby. We do not track your location in the background.</li>
+      <li><strong>Game participation</strong> -- A record of games you have posted, joined, or completed. This is used to build your participation history on the platform.</li>
+      <li><strong>Contacts</strong> -- Your device contacts, only when you opt in, to help you find people you know who are already on aPeer. Contact data is used for matching only and is not stored on our servers.</li>
+    </ul>
+
+    <h2>How we use your data</h2>
+    <p>We use the data we collect for the following purposes:</p>
+    <ul>
+      <li><strong>Account creation and authentication</strong> -- To create and maintain your aPeer account.</li>
+      <li><strong>Game matching</strong> -- To show you relevant games in your area and connect you with other players.</li>
+      <li><strong>Network suggestions</strong> -- To suggest players you may want to add to your network based on shared games or mutual connections.</li>
+      <li><strong>Participation history</strong> -- To track participation patterns so that hosts and players can make informed decisions.</li>
+      <li><strong>Notifications</strong> -- To send you push notifications about games you have joined, game status changes, and join requests. You can control notification preferences in your device settings.</li>
+    </ul>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not sell your data to anyone.</li>
+      <li>We do not share your data with advertisers.</li>
+      <li>We do not track you across other apps or websites.</li>
+      <li>We do not use your data to build advertising profiles.</li>
+      <li>We do not access your location when the app is not in use.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>aPeer uses the following third-party services to operate:</p>
+    <ul>
+      <li><strong>Supabase</strong> -- Database and authentication infrastructure. Your data is stored securely on Supabase-managed servers.</li>
+      <li><strong>Apple Sign-In</strong> -- Authentication. We receive only the information you authorize Apple to share.</li>
+      <li><strong>Expo Push Notifications</strong> -- To deliver push notifications to your device. We send only the minimum data required (push token and message content).</li>
+    </ul>
+
+    <h2>Data retention</h2>
+    <p>Your data is retained for as long as your account is active. If you choose to deactivate your account, we begin a 30-day deletion process. After 30 days, your personal data is permanently removed from our systems.</p>
+    <p>Anonymized, aggregate data (such as total games played across the platform) may be retained for analytics purposes and cannot be traced back to you.</p>
+
+    <h2>Data security</h2>
+    <p>We use industry-standard security measures to protect your data, including encrypted connections (HTTPS/TLS), row-level security policies on our database, and secure authentication via Apple Sign-In. No system is perfectly secure, but we take reasonable steps to protect your information.</p>
+
+    <h2>Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>Request deletion of your account and associated data.</li>
+      <li>Withdraw consent for optional data collection (location, contacts) at any time through your device settings.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>aPeer is not intended for use by anyone under the age of 17. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this privacy policy from time to time. If we make significant changes, we will notify you through the app. The "last updated" date at the top of this page reflects the most recent revision.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at <a href="mailto:feedback@apeer.app">feedback@apeer.app</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-wordmark">aPeer</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:feedback@apeer.app">Contact</a>
+      </nav>
+      <span class="footer-copy">&copy; 2026 aPeer</span>
+    </div>
+  </footer>
+
+</body>
+</html>
