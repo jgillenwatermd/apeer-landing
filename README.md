@@ -59,11 +59,7 @@ For all hosts: point your DNS for `apeer.app` to the host's servers (CNAME or A 
 
 ## TestFlight Link
 
-Update the `#testflight` placeholder href in both `index.html` (two instances) once you have the public TestFlight link. Replace with:
-
-```
-https://testflight.apple.com/join/YOUR_CODE
-```
+Public TestFlight link: https://testflight.apple.com/join/QMJ146Yg
 
 ## Open Graph Image
 
