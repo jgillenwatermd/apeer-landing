@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>aPeer - More GAME ON.</title>
-  <meta name="description" content="A certainty engine for pickup games. See state, quorum progress, time, and venue fast so you know if it's worth leaving home.">
+  <meta name="description" content="See who's committed. Watch spots fill. Know when it's GAME ON.">
   <meta name="theme-color" content="#1C1917">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="aPeer - More GAME ON.">
-  <meta property="og:description" content="A certainty engine for pickup games with deterministic state and quorum clarity.">
+  <meta property="og:description" content="See who's committed. Watch spots fill. Know when it's GAME ON.">
   <meta property="og:url" content="https://apeer.app">
   <meta property="og:site_name" content="aPeer">
   <meta property="og:image" content="https://apeer.app/og-image.png">
@@ -18,7 +18,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="aPeer - More GAME ON.">
-  <meta name="twitter:description" content="Deterministic quorum states so players know when a real game is happening. Free on iOS via TestFlight.">
+  <meta name="twitter:description" content="See who's committed. Watch spots fill. Know when it's GAME ON. Free on iOS via TestFlight.">
   <meta name="twitter:image" content="https://apeer.app/og-image.png">
 
   <!-- Favicon -->
@@ -51,6 +51,10 @@
       --text-on-primary: #042F2E;
       --border: #44403C;
       --border-light: #292524;
+      --volt-green: #76F13D;
+      --volt-green-light: #8FF55E;
+      --volt-green-soft: rgba(118, 241, 61, 0.10);
+      --volt-green-muted: rgba(118, 241, 61, 0.25);
 
       /* Typography */
       --font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -171,15 +175,15 @@
       font-family: var(--font-stack);
       font-weight: 600;
       font-size: 0.875rem;
-      background: var(--primary);
-      color: var(--text-on-primary);
+      background: var(--volt-green);
+      color: #1C1917;
       padding: var(--space-sm) var(--space-xl);
       border-radius: var(--radius-md);
       transition: background 0.2s ease, transform 0.1s ease;
     }
 
     .nav-cta:hover {
-      background: var(--primary-light);
+      background: var(--volt-green-light);
     }
 
     .nav-cta:active {
@@ -210,12 +214,12 @@
     }
 
     .btn-primary {
-      background: var(--primary);
-      color: var(--text-on-primary);
+      background: var(--volt-green);
+      color: #1C1917;
     }
 
     .btn-primary:hover {
-      background: var(--primary-light);
+      background: var(--volt-green-light);
     }
 
     /* ===================================
@@ -241,7 +245,7 @@
       transform: translate(-50%, -50%);
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(118, 241, 61, 0.06) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -270,7 +274,7 @@
     }
 
     .hero-headline-accent {
-      color: var(--primary);
+      color: var(--volt-green);
     }
 
     .hero-sub {
@@ -413,7 +417,7 @@
     }
 
     .feature:hover {
-      border-color: var(--primary-muted);
+      border-color: var(--volt-green-muted);
     }
 
     .feature h3 {
@@ -429,6 +433,18 @@
 
     .feature-wide {
       grid-column: 1 / -1;
+    }
+
+    .game-on-badge {
+      display: inline-block;
+      background: var(--volt-green);
+      color: #1C1917;
+      font-weight: 800;
+      font-size: 0.8125rem;
+      letter-spacing: 0.05em;
+      padding: 2px 10px;
+      border-radius: 9999px;
+      vertical-align: middle;
     }
 
     /* ===================================
@@ -609,7 +625,7 @@
       transform: translate(-50%, -50%);
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(118, 241, 61, 0.05) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -830,7 +846,7 @@
     <div class="container hero-content">
       <span class="hero-badge">Now in beta on iOS</span>
       <h1 class="hero-headline"><span class="hero-headline-accent">GAME ON.</span></h1>
-      <p class="hero-sub">Know before you go. aPeer makes pickup games clear. Players commit. The count is real. No guessing. No "maybe." No group chat chaos.</p>
+      <p class="hero-sub">See who's committed. Watch spots fill. Know when it's <span class="game-on-badge">GAME ON</span> — before you leave the house.</p>
       <div class="hero-actions">
         <a href="https://testflight.apple.com/join/QMJ146Yg" class="btn btn-primary">Join the beta</a>
       </div>
@@ -876,8 +892,8 @@
             <li class="path-step">
               <span class="path-step-number">4</span>
               <div class="path-step-content">
-                <h3>Watch it fill</h3>
-                <p>Commitments land in real time.</p>
+                <h3>Watch spots fill</h3>
+                <p>Avatar slots fill in real time. When the last spot fills — GAME ON.</p>
               </div>
             </li>
           </ol>
@@ -900,7 +916,7 @@
               <span class="path-step-number">2</span>
               <div class="path-step-content">
                 <h3>Who's in</h3>
-                <p>See who's already committed.</p>
+                <p>See committed players' faces, not just a number.</p>
               </div>
             </li>
             <li class="path-step">
@@ -913,8 +929,8 @@
             <li class="path-step">
               <span class="path-step-number">4</span>
               <div class="path-step-content">
-                <h3>Show up</h3>
-                <p>You'll know it's happening.</p>
+                <h3>Head out</h3>
+                <p>Mark "I'm on my way" so others know the game is real.</p>
               </div>
             </li>
           </ol>
@@ -932,24 +948,24 @@
 
       <div class="features">
         <div class="feature">
-          <h3>Clear commitments</h3>
-          <p>Players tap Join. The count moves. Everyone sees the same number.</p>
+          <h3>See who's in</h3>
+          <p>Avatar slots show committed players by face, not just a count. Host first, then in order.</p>
         </div>
         <div class="feature">
-          <h3>No "who's in?" threads</h3>
-          <p>No scrolling through messages to figure out if the game is real.</p>
+          <h3>X SPOTS LEFT</h3>
+          <p>Live scarcity. Every card shows exactly how many spots remain. When it hits zero — GAME ON.</p>
         </div>
         <div class="feature">
-          <h3>Visible players</h3>
-          <p>You see exactly who committed before you leave your house.</p>
+          <h3>I'M ON MY WAY</h3>
+          <p>One tap to signal you're heading out. Others see the count rise. Momentum builds.</p>
         </div>
         <div class="feature">
-          <h3>Simple, focused</h3>
+          <h3>No feed. No noise.</h3>
           <p>No content. No feed. No noise. Just the game.</p>
         </div>
         <div class="feature feature-wide">
-          <h3>When the count is met, it's GAME ON.</h3>
-          <p>That means enough players committed. You can leave.</p>
+          <h3><span class="game-on-badge">GAME ON</span> means go.</h3>
+          <p>Enough players committed. People are on the way. Leave your house.</p>
         </div>
       </div>
     </div>
@@ -1023,7 +1039,7 @@
           <p>Over time, more games include people you recognize.</p>
         </div>
         <div class="network-card network-card-accent">
-          <p>Familiar players. Clear commitments. More GAME ON.</p>
+          <p>Familiar faces. Clear commitments. More GAME ON.</p>
         </div>
       </div>
     </div>
